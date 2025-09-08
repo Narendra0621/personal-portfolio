@@ -1,0 +1,72 @@
+# Node modules
+/node_modules
+/.pnp
+.pnp.js
+
+# Build output
+/dist
+/build
+/.vite
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+/.turbo
+/.cache
+/coverage
+/.next
+/.nuxt
+/.parcel-cache
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.vscode/.env
+.env.production
+.env.production.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Mac/Linux thumbnail cache
+Icon?
+ehthumbs.db
+
+# Test / storybook / temp
+jest.cache
+.vitest
+storybook-static
+.cache
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+*.log
+*.pem
+*.key
+
+# Assets (if you keep large raw images or exports in repo root)
+/src/assets/*.psd
+/src/assets/*.ai
+/src/assets/*.xcf
+
+# Package lock (choose one if you commit lockfiles — otherwise ignore them)
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
+
+# Optional: ignore local generated profile image if you prefer to keep repo clean
+/src/assets/profile.png

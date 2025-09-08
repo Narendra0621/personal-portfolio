@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --accent:#0a84ff; /* Apple blue */
+  --muted:#8b8b8b;
+  --glass-bg: rgba(255,255,255,0.06);
+}
+
+html,body,#root{ height:100%; }
+body{
+  @apply bg-gradient-to-b from-neutral-900 via-neutral-900 to-neutral-800 text-white antialiased;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.card-glass{
+  background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+}
+
+.hi-text{
+  background: linear-gradient(90deg,var(--accent),#5aeaff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes floaty { 0% { transform: translateY(0px); } 50% { transform: translateY(-6px); } 100% { transform: translateY(0px); } }
+.floaty{ animation: floaty 6s ease-in-out infinite; }
+
+.nav-link:hover{ color: var(--accent); transform: translateY(-2px); }
+.container-max{ max-width:1100px; margin-left:auto; margin-right:auto; padding-left:1rem; padding-right:1rem; }
